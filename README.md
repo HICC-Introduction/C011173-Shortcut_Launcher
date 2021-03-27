@@ -22,8 +22,8 @@
 ### 하드웨어
 * CPU : 프로세서	Intel(R) Core(TM) i5-3570 CPU @ 3.40GHz, 3401Mhz, 4 코어, 4 논리 프로세서
 * RAM : 설치된 실제 메모리(RAM)	8.00GB
-* HDD/SSD : []/모델	SAMSUNG SSD 830 Series
-* GPU : []
+* HDD/SSD : 모델	SAMSUNG SSD 830 Series
+* GPU : Intel(R) HD Graphics
 
 ### 소프트웨어
 * OS : OS 이름	Microsoft Windows 10 Pro 버전	10.0.19041 빌드 19041
