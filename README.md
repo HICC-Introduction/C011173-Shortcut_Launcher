@@ -28,8 +28,8 @@
 ### 소프트웨어
 * OS : OS 이름	Microsoft Windows 10 Pro 버전	10.0.19041 빌드 19041
 * 개발 스택 : Tkinter
-* 개발 프로그램 : Thonny 
-* 개발 언어 : [Python v3.5]
+* 개발 프로그램 : Pycharm
+* 개발 언어 : Python v3.9.2
 
 ### 코드룰
 * 예시 프로그램
