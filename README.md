@@ -32,7 +32,7 @@
 
 ### 소프트웨어
 * OS : OS 이름	Microsoft Windows 10 Pro 버전	10.0.19041 빌드 19041
-* 개발 스택 : Tkinter
+* 개발 스택 : Tkinter (선택이유 : 유튜브나 블로그에 관련 자료가 많고 잘 정리되어있다)
 * 개발 프로그램 : Pycharm
 * 개발 언어 : Python v3.9.2
 
