@@ -9,13 +9,18 @@
 - 프로그램의 버튼을 클릭하면 지정된 명령어를 실행한다.
 
 ### 문제 분석
-[프로그램을 만들 때 예상할 수 있는 문제들을 최대한 쪼개서 어떤 문제를 해결해야 결과를 이루어낼 수 있을까. 에 대해 작성해주세요.]
   
 * 최종 목적 : 단축키 실행 프로그램인 Shortcut Launcher를 완성한다.
     * 상위 목적 : GUI에 버튼을 구현한다.
-        * 하위 목적 : ...
+        * 하위 목적 : 
+        * 윈도우 창 생성- 너비와 높이, 초기 위치 설정, 창 크기 조절 가능 여부 설정
+        * 2행 4열의 그리드 버튼 생성
+        * 파라미터를 사용하여 버튼의 속성 설정
     * 상위 목적 : GUI에 버튼을 눌렀을 때, 응용프로그램을 실행시킨다.
-        * 하위 목적 : ...
+        * 하위 목적 : 
+        * 응용프로그램 이름과 이미지 삽입
+        * 응용 프로그램 명령어 설정
+        * 버튼 동작 설정
 
 ## 개발 사양
 
@@ -42,17 +47,13 @@
     class TestClass:
         def __init__(self):
             # 프로퍼티명
-            self.testProperty = 41
+            self.test_property = 41
 
         # 메소드명
         def TestMethod(self):
-            print(self.testProperty)
+            print(self.test_property)
     
     if __name__ == "__main__":
         test_variable = TestClass(43)
         test_variable.TestMethod()
 ```
-
-* 본인의 코드 룰 
-
-[위의 코드를 본인의 스타일로 직접 짜보세요]
