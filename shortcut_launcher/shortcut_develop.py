@@ -3,6 +3,7 @@ from tkinter import filedialog
 import subprocess
 import webbrowser
 from tkinter import *
+import tkinter.ttk
 
 window=tkinter.Tk() #윈도우 창 생성
 
@@ -94,24 +95,45 @@ def Setting():
     new_window.geometry("350x150+150+380")
     new_window.resizable(False, False)
 
+    notebook = tkinter.ttk.Notebook(new_window, width=340, height=140)
+    notebook.pack()
+
+    frame1 = tkinter.Frame(new_window)
+    notebook.add(frame1, text="크기")
+    label1 = tkinter.Label(frame1, text="가로 및 세로의 크기")
+    label1.pack()
+
+    frame2 = tkinter.Frame(new_window)
+    notebook.add(frame2, text="옵션")
+    label2 = tkinter.Label(frame2, text="항상 위")
+    label2.pack()
+
+    frame3 = tkinter.Frame(new_window)
+    notebook.add(frame3, text="색상")
+    label3 = tkinter.Label(frame3, text="프로그램 색상의 값")
+    label3.pack()
+
 def Info():
     new_window = tkinter.Tk()
     new_window.title("Program Information")
     new_window.geometry("350x150+200+400")
     new_window.resizable(False, False)
 
+    message = tkinter.Message(new_window, text="\n\nThis is Shortcut Launcher Program !",width=300)
+    message.pack()
+
 def Exit():
     exit()
 
-# 메뉴
+# 메뉴 생성
 menubar = Menu(window)
 
 program_menu = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="메뉴", menu=program_menu)
 program_menu.add_command(label="프로그램 설정", command=Setting)
 program_menu.add_command(label="프로그램 정보", command=Info)
-program_menu.add_command(label="종료", command=Exit)
 program_menu.add_separator()
+program_menu.add_command(label="종료", command=Exit)
 
 window.config(menu=menubar)
 
