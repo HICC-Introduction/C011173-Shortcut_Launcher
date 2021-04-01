@@ -14,7 +14,7 @@ window.resizable(False, False) #윈도우 창의 창 크기 조절 가능 여부
 
 ###main program
 
-##버튼 button
+## 버튼 button ##
 
 # 버튼 동작 설정 함수
 def Notepad():
@@ -34,7 +34,6 @@ def Google():
     webbrowser.open(url)
 
 # 버튼 이미지 삽입
-#root = Tk()
 photo1 = PhotoImage(file=r"C:\Users\Leejieun\Pictures\pythongui_img\notepad.png")
 photo2 = PhotoImage(file=r"C:\Users\Leejieun\Pictures\pythongui_img\calc.png")
 photo3 = PhotoImage(file=r"C:\Users\Leejieun\Pictures\pythongui_img\폴더C.png")
@@ -62,7 +61,7 @@ button7.place(x=410, y=100 ,width=180, height=80)
 button8.place(x=610, y=100, width=180, height=80)
 
 
-## 라벨 label
+## 라벨 label ##
 
 # 윈도우창에 라벨 설정하기
 label1=tkinter.Label(window, text="메모장",  fg="red", relief="solid")
@@ -84,5 +83,36 @@ label5.place(x=10, y=180, width=180, height=20)
 label6.place(x=210, y=180, width=180, height=20)
 label7.place(x=410, y=180, width=180, height=20)
 label8.place(x=610, y=180, width=180, height=20)
+
+
+## 메뉴 menu ##
+
+# 메뉴 동작 설정 함수
+def Setting():
+    new_window = tkinter.Tk()
+    new_window.title("Program Setting")
+    new_window.geometry("350x150+150+380")
+    new_window.resizable(False, False)
+
+def Info():
+    new_window = tkinter.Tk()
+    new_window.title("Program Information")
+    new_window.geometry("350x150+200+400")
+    new_window.resizable(False, False)
+
+def Exit():
+    exit()
+
+# 메뉴
+menubar = Menu(window)
+
+program_menu = Menu(menubar, tearoff=0)
+menubar.add_cascade(label="메뉴", menu=program_menu)
+program_menu.add_command(label="프로그램 설정", command=Setting)
+program_menu.add_command(label="프로그램 정보", command=Info)
+program_menu.add_command(label="종료", command=Exit)
+program_menu.add_separator()
+
+window.config(menu=menubar)
 
 window.mainloop()
